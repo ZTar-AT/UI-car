@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css?family=Mitr');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Bebas Neue');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+@font-face {
+    font-family: Neighbor;
+    src: url(Neighbor.ttf);
+}
+
+* {
+    font-family: Neighbor;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.position {
+    position: fixed;
+    right:  5%;
+    bottom: 5%;
+
+    width: 20vw;
+    color: white;
+  
+}
+
+
+#car {
+    /*car*/
+    width: 3.5vw;
+    height: 6vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+#car1 {
+    position: absolute;
+    left: 1.5vw;
+    bottom: 1vw;
+  
+    width: 1vw;
+    height: 0.8vw;
+    fill: white;
+}
+
+#wheel {
+    /*ล้อขวาบน*/
+    width: 1.8vw;
+    height: 1vw;
+    position: absolute;
+    left: 75%;
+    top: 31%;
+    transform: translate(-50%, -50%);
+    filter: redscale(100%);
+}
+
+#wheel2 {
+    /*ล้อซ้ายบน*/
+    width: 1.8vw;
+    height: 1vw;
+    position: absolute;
+    left: 25%;
+    top: 31%;
+    transform: translate(-50%, -50%);
+}
+
+#wheel3 {
+    /*ล้อซ้ายล่าง*/
+    width: 1.8vw;
+    height: 1vw;
+    position: absolute;
+    left: 25%;
+    top: 71%;
+    transform: translate(-50%, -50%);
+}
+
+#wheel4 {
+    /*ล้อขวาล่าง*/
+    width: 1.8vw;
+    height: 1vw;
+    position: absolute;
+    left: 75%;
+    top: 71%;
+    transform: translate(-50%, -50%);
+}
+
+.shap {
+   
+    position: relative;
+
+
+    width: 100%;
+    height: 8vw;
+    background-image: url(https://media.discordapp.net/attachments/989432223780462602/1002132365977604217/FN02.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.num-khm {
+    position: absolute;
+
+    width: 7vw;
+    height: 4vw;
+    text-align: center;
+    bottom: 35%;
+    right: 20%;
+    font-size: 4vw;
+    color: rgb(0, 110, 255);
+
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.khm {
+    position: relative;
+    bottom: 35%;
+    left: 120%;
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 5px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.box {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    /* background-color: #a48ed2; */
+    left: 27.5%;
+    top: 170px;
+    font-size: 1vh;
+    text-align: center;
+}
+
+#cityzone {
+    position: relative;
+    display: block;
+    top: 100%;
+    /* right: 380%; */
+    width: 20px;
+    height: 20px;
+    fill: rgba(255, 255, 255, 0);
+}
+
+.belt {
+    position: absolute;
+    left: 3vw;
+    bottom: 1vw;
+ 
+    width: 1vw;
+    height: 1vw;
+    fill: white;
+    
+}
+
+.pp {
+    animation-name: pp-anim;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.speedlimit {
+    position: absolute;
+    left: 0vw;
+    bottom: 1vw;
+ 
+    width: 1vw;
+    height: 1vw;
+    fill: white;
+}
+
+#fuel-bg {
+    position: absolute;
+    left: 1.5vw;
+    bottom: 3vw;
+    width: 1vw;
+    height: 0.2vw;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(0, 110, 255);
+}
+
+.fuel-icon {
+  
+    width: 1.3w;
+    height: 1.3vw;
+    position: absolute;
+    left: 0;
+    bottom: 3vw;
+
+}
+
+.fuel-text {
+    position: absolute;
+    left: 1.5vw;
+    bottom: 3.3vw;
+    width: 1vw;
+    
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size:0.8vw;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+
+#fuel-load {
+    width: 60%;
+    height: 100%;
+    background: rgb(0, 110, 255);
+}
+
+#engine-bg {
+    border-left: 3px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    width: 100%;
+    height: 15px;
+    transform: skew(20deg);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#engine-load {
+    width: 100%;
+    height: 15px;
+    background-image: linear-gradient(to right top, #ffd900, #ffd900, #ffd900, #ffd900, #5100ff);
+}
+
+.num-gear {
+    position: absolute;
+
+    bottom: 0.5vw;
+    right: 1.5vw;
+    width: 1.5vw;
+    color: rgb(0, 110, 255);
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+    font-size: 1vw;
+}
+
+.gear {
+    position: relative;
+    font-family: 'Rajdhani', sans-serif;
+    top: 10%;
+    left: 125%;
+    font-size: 1.8vh;
+}
+
+
+.block1 {
+    position: absolute;
+    margin-left: 0.5vw;
+
+    width: 30%;
+    height: 100%;
+
+}
+
+.block1-tag {
+    position: absolute;
+    margin-left: 6.5vw;
+    width: 64%;
+    height: 100%;
+   
+}
+
+.block2 {
+    position: absolute;
+  
+    width: 6vw;
+    height: 100%;
+  margin-left: 6.5vw;
+    text-align: center;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+@keyframes border-anim {
+    0% {
+        border-bottom: 1px solid #ffd900;
+        border-left: 4px solid #ffd900;
+    }
+
+    10% {
+        border-bottom: 1px solid #ffd900;
+        border-left: 4px solid #ffd900;
+    }
+
+    20% {
+        border-bottom: 1px solid #ffd900;
+        border-left: 4px solid #ffd900;
+    }
+
+    30% {
+        border-bottom: 1px solid #ffd900;
+        border-left: 4px solid #ffd900;
+    }
+
+    40% {
+        border-bottom: 1px solid#a48ed2;
+        border-left: 4px solid #a48ed2;
+    }
+
+    50% {
+        border-bottom: 1px solid #a48ed2;
+        border-left: 4px solid #a48ed2;
+    }
+
+    60% {
+        border-bottom: 1px solid #ffd900;
+        border-left: 4px solid #ffd900;
+    }
+
+    70% {
+        border-bottom: 1px solid #ffd900;
+        border-left: 4px solid #ffd900;
+    }
+
+    80% {
+        border-bottom: 1px solid #ffd900;
+        border-left: 4px solid #ffd900;
+    }
+
+    90% {
+        border-bottom: 1px solid #ffd900;
+        border-left: 4px solid #ffd900;
+    }
+
+    100% {
+        border-bottom: 1px solid #ffd900;
+        border-left: 4px solid #ffd900;
+    }
+}
+
+@keyframes border-anim-sub {
+    0% {
+        border-bottom: 2px solid #ffd900;
+    }
+
+    10% {
+        border-bottom: 2px solid #ffd900;
+    }
+
+    20% {
+        border-bottom: 2px solid #ffd900;
+    }
+
+    30% {
+        border-bottom: 2px solid #ffd900;
+    }
+
+    40% {
+        border-bottom: 2px solid#a48ed2;
+    }
+
+    50% {
+        border-bottom: 2px solid #a48ed2;
+    }
+
+    60% {
+        border-bottom: 2px solid #ffd900;
+    }
+
+    70% {
+        border-bottom: 2px solid #ffd900;
+    }
+
+    80% {
+        border-bottom: 2px solid #ffd900;
+    }
+
+    90% {
+        border-bottom: 2px solid #ffd900;
+    }
+
+    100% {
+        border-bottom: 2px solid #ffd900;
+    }
+}
+
+@keyframes pp-anim {
+    0% {
+        opacity: 0.0;
+    }
+
+    10% {
+        opacity: 0.2;
+    }
+
+    20% {
+        opacity: 0.4;
+    }
+
+    30% {
+        opacity: 0.6;
+    }
+
+    40% {
+        opacity: 0.8;
+    }
+
+    50% {
+        opacity: 1.0;
+    }
+
+    60% {
+        opacity: 1.0;
+    }
+
+    70% {
+        opacity: 0.8;
+    }
+
+    80% {
+        opacity: 0.6;
+    }
+
+    90% {
+        opacity: 0.4;
+    }
+
+    100% {
+        opacity: 0.2;
+    }
+}
